@@ -2,8 +2,19 @@
 
 <div class="jumbotron center">
 
-<h1>Welcome to MyInterests!</h1>
-<p>A website where you can find anything that passions you.</p>
-<%= link_to "Login", new_user_session_path, class: 'btn btn-success' %>
-<%= link_to "Join", new_user_registration_path, class: 'btn btn-danger' %>
+    <strong><h1>Welcome to myInterests!</h1></strong>
+    <strong><p>A website where you can find anything that passions you.</p></strong>
+
+
+    <% if user_signed_in? %>
+      <%= link_to "Logout", destroy_user_session_path, :method => :delete, class: 'btn btn-warning' %>
+      <%= link_to "Edit Profile", edit_user_registration_path, class: 'btn btn-success' %>
+    <% else %>
+
+      <%= link_to "Login", new_user_session_path, class: 'btn btn-success' %>
+      <%= link_to "Join", new_user_registration_path, class: 'btn btn-primary' %>
+
+    <% end %>
+
+
 </div>

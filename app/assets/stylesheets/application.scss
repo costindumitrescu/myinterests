@@ -1,6 +1,22 @@
+$jumbotron-color:#2b2726;
+$jumbotron-bg:#cd3131;
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 .center {
   text-align: center;
+}
+
+.navbar-brand {
+   font-family: 'Brush Script MT', cursive;
+   font-size: 36px;
+}
+h1{
+     font-family: 'Brush Script MT', cursive;
+}
+
+p{
+  font-family: Copperplate, Papyrus, fantasy;
 }
