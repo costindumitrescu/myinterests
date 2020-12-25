@@ -18,6 +18,7 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem 'devise', '~> 4.7', '>= 4.7.3'
+gem 'paperclip', '~> 6.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
